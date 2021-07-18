@@ -7,22 +7,28 @@ import video from './Assets/video1.jpg';
 import video1 from './Assets/3060.jpg';
 import video2 from './Assets/3090.jpg';
 import video3 from './Assets/6700.jpg';
-import { ImgStyles } from './components/commons/ImgStyles';
-
 function App() {
   return (
     <>
       <Title>
         Ganhe até 50% de desconto!
       </Title>
-      <>
-       <ImgStyles src={video} alt="Placa de vídeo 1660" />
-       <ImgStyles src={video1} alt="Placa de vídeo 3060" />
-       <ImgStyles src={video2} alt="Placa de vídeo 3090" />
-       <ImgStyles src={video3} alt="Placa de vídeo 6700" />
-      </>
+      <div className="foto">
+        <div className="caixaImg alinhaDir">
+        <img src={video} alt="Placa de vídeo 1660" className="objetoImg" />
+        </div>
+        <div className="caixaImg">
+        <img src={video1} alt="Placa de vídeo 3060" className="objetoImg" />
+        </div>
+        <div className="caixaImg alinhaDir">  
+        <img src={video2} alt="Placa de vídeo 3090" className="objetoImg"/>
+        </div>
+        <div className="caixaImg">
+        <img src={video3} alt="Placa de vídeo 6700" className="objetoImg"/>
+        </div>
+      </div>
       <Paragraphy>
-      Cadastre-se para receber nossas ofertas por e-mail!
+      <h4>Cadastre-se para receber nossas ofertas por e-mail!</h4>
       <FormRegister />
       </Paragraphy>
       <Footer />

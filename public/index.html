@@ -9,6 +9,31 @@
     <title>Promoção Placas de Vídeo até 50% off!</title>
   </head>
   <body>
+    <style>
+      .foto{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .objetoImg{
+        height:100%;
+      }
+      .caixaImg{
+        height: 14em;
+      }
+      .alinhaDir{
+        text-align: center;
+      }
+      @media (max-width: 920px) {
+        .alinhaDir{
+        text-align: right;
+        }
+        .caixaImg{
+          width: 50%;
+        }
+      }
+    </style>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
